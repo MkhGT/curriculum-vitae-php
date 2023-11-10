@@ -39,7 +39,7 @@ $data = mysqli_fetch_array($result);
                             <a href="index.php" class="nav-link active me-2">Home</a>
                         </li>
                         <li class="nav-items">
-                            <a href="index.php" class="nav-link">Update</a>
+                            <a href="edit.php" class="nav-link">Update</a>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +66,7 @@ $data = mysqli_fetch_array($result);
                 <div class="cards d-flex justify-content-center gap-2">
                     <div class="card p-3 border border-0 bg-light" style="width: 18rem;">
                         <h5 class="card-title"><i data-feather="book-open" class='me-1'
-                                style='color: brown;'></i>Pendidikan</h5>
+                                style='color: brown ;'></i>Pendidikan</h5>
                         <p class="card-text">
                             <?php echo $data['pendidikan']; ?>
                         </p>
