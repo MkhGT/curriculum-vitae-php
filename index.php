@@ -68,14 +68,22 @@ $data = mysqli_fetch_array($result);
                         <h5 class="card-title"><i data-feather="book-open" class='me-1'
                                 style='color: brown ;'></i>Pendidikan</h5>
                         <p class="card-text">
-                            <?php echo $data['pendidikan']; ?>
+                        <?php
+                            $arrayPendidikan = explode(",", $data['pendidikan']);
+                            foreach ($arrayPendidikan as $nilai) {
+                                echo $nilai . '<br>';
+                            } ?>
                         </p>
                     </div>
                     <div class="card p-3 border border-0 bg-light" style="width: 18rem;">
                         <h5 class="card-title"><i data-feather="git-branch" class='me-1'
                                 style='color: purple;'></i>Skills</h5>
                         <p class="card-text">
-                            <?php echo $data['keterampilan']; ?>
+                            <?php
+                            $arraySkill = explode(",", $data['keterampilan']);
+                            foreach ($arraySkill as $nilai) {
+                                echo $nilai . '<br>';
+                            } ?>
                         </p>
                     </div>
                     <div class="card p-3 border border-0 bg-light" style="width: 18rem;">
