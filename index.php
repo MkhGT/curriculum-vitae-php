@@ -68,7 +68,7 @@ $data = mysqli_fetch_array($result);
                         <h5 class="card-title"><i data-feather="book-open" class='me-1'
                                 style='color: brown ;'></i>Pendidikan</h5>
                         <p class="card-text">
-                        <?php
+                            <?php
                             $arrayPendidikan = explode(",", $data['pendidikan']);
                             foreach ($arrayPendidikan as $nilai) {
                                 echo $nilai . '<br>';
@@ -90,7 +90,11 @@ $data = mysqli_fetch_array($result);
                         <h5 class="card-title"><i data-feather="command" class='me-1'
                                 style='color: pink;'></i>Experience</h5>
                         <p class="card-text">
-                            <?php echo $data['pengalaman_kerja']; ?>
+                            <?php
+                            $arrayExp = explode(",", $data['pengalaman_kerja']);
+                            foreach ($arrayExp as $nilai) {
+                                echo $nilai . '<br>';
+                            } ?>
                         </p>
                     </div>
                 </div>
